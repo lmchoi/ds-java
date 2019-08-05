@@ -43,7 +43,14 @@ public class UnionFind {
     }
 
     public int distinct() {
-        return (int) Arrays.stream(unions).distinct().count();
+        int count = 0;
+        for (int i = 0; i < unions.length; i++) {
+            if (unions[i] == i) {
+                count++;
+            }
+        }
+
+        return count;
     }
 
     @Override
