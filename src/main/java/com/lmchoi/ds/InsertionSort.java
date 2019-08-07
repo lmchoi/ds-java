@@ -1,6 +1,7 @@
 package com.lmchoi.ds;
 
-public class InsertionSort {
+public class InsertionSort extends SortingAlgo {
+    @Override
     public void sort(Comparable[] arr) {
         if (arr.length < 2) {
             return;
